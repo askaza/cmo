@@ -1,0 +1,146 @@
+/********** UI **********/
+
+/****** Text ******/
+.section-title{
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 1.1;
+	margin-bottom: 30px; 
+
+	@media(min-width: 768px){
+		font-size: 4rem; 
+	}
+
+	@media(min-width: 960px){
+		font-size: 6rem;
+		margin-bottom: 50px; 
+	}
+
+	@media(min-width: 1260px){
+		padding: 0 10%;
+	}
+}
+
+.section-title-description{
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+/***** Buttons *****/
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	border:none;
+	cursor: pointer;
+	height: 54px;
+	line-height: 54px;
+	font-size: 2.2rem;
+	border-radius: 27px;
+	color: $ColorBase;
+	padding: 0 20px;
+	background: #fff;
+	font-family: 'grotesk';
+	font-weight: 300;
+	transition: .2s;
+
+	&:hover, &:active{
+		background: $ColorSpecial-1;
+		color: #fff;
+	}
+
+	@media(min-width: 480px){
+		padding: 0 30px;
+	}
+}
+
+
+/***** Form elems *****/
+.inp-text{
+	height: 24px; 
+	width: 100%;
+	border:none;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	padding: 0;
+	font-weight: normal;
+	font-size: 2rem;
+	color: #fff; 
+
+	&::-webkit-input-placeholder{color: rgba(255,255,255,0.8);}
+	&:-moz-placeholder{color: rgba(255,255,255,0.8);}
+
+	&.__error{
+		color: #ff055b;
+
+		&::-webkit-input-placeholder{color: #ff055b;}
+		&:-moz-placeholder{color:#ff055b;}  
+	}
+}
+
+
+
+/***** Screen block *****/
+.screen-block{
+	position: relative;  
+
+	&._with-shadow{
+		box-shadow: 0 0 20px rgba(25,50,100,0.23);
+
+		@media(min-width: 1260px){
+			box-shadow: 0 0 54px rgba(25,50,100,0.23); 
+		}
+	}
+}
+
+.screen-block-header{
+	height: 20px;
+	position: relative;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background: #eee;
+	padding: 7px 0 0 18px;  
+}
+
+.screen-block-header__dots{
+	width: 6px;
+	height: 6px;
+	position: relative;
+	border-radius: 50%;
+	background: #dcdcdc;
+
+	&:before, &:after{
+		content: "";
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: #dcdcdc;
+		top: 0;
+	}
+
+	&:before{left: -10px;}
+	&:after{right: -10px;}
+}
+
+.screen-block-content{
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}  
+}
+
+
+/***** Slider dot *****/
+.bx-pager-link{
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #ebebeb;
+	text-decoration: none;
+
+	&.active{background: #565656;}
+}

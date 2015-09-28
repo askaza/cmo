@@ -1,0 +1,158 @@
+/********** HEADER **********/
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $TopPanelHeight - 10;
+	padding-top: 8px;
+	z-index: 100;
+	transition: .2s;
+
+	&.with-bg{
+		background: #fff;
+		box-shadow: 0 1px 2px #ccc;  
+	}
+
+	@media(min-width: 768px){
+		height: $TopPanelHeight;
+		padding-top: 13px;
+	}
+
+	@media(min-width: 1260px){
+		padding-top: 30px;
+
+		&.with-bg{
+			padding-top: 13px;  
+		}
+	}
+}
+
+.logo{
+	float: left;
+}
+
+.logo__link{
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+	padding-top: 10px; 
+	transition: .2s;
+	cursor: pointer;
+
+	.with-bg &{color: $ColorBase;} 
+
+	@media(min-width: 768px){
+		font-size: 30px;
+		padding-top: 4px;
+	}
+}
+
+.top-menu{
+	display: none;
+
+	li{
+		list-style: none;
+		margin-right: 34px;
+		display: inline-block;
+
+		&:last-child{margin-right: 0;} 
+	}
+
+	@media(min-width: 960px){
+		display: block;
+	    float: left;
+	    margin-left: 34px;
+	    font-size: 1.6rem;
+	    padding-top: 15px; 
+	}
+
+	@media(min-width: 1260px){
+		margin-left: 100px;
+		 font-size: 1.8rem;  
+	}
+}
+
+.top-menu__link{
+	text-decoration: none;
+	color: #fff;
+	transition: .2s;
+
+	&:hover{color: $ColorSpecial-2;}
+
+	.with-bg &{
+		color: $ColorBase;
+
+		&:hover{color: $ColorSpecial-2;}
+	} 
+}
+
+.top-contacts{
+	float: right;
+	position: relative;
+	transition: .2s;
+
+	@media(min-width: 1260px){
+		.with-bg &{width: 520px}
+	}
+}
+
+.top-phone{
+	font-size: 2rem;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	padding-top: 11px;
+	transition: color .2s;
+
+	.with-bg &{
+		color: $ColorBase;
+		opacity: 0;
+	}
+
+	@media(min-width: 768px){
+		font-size: 2.4rem;  
+
+		.with-bg &{
+			opacity: 1;
+			font-size: 1.8rem;
+			padding-top: 15px; 
+		} 
+	}
+
+	@media(min-width: 1260px){  
+		.with-bg &{
+			opacity: 1;
+			font-size: 1.8rem;
+			padding-top: 15px; 
+		} 
+	}
+}
+
+.top-contacts-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	white-space: nowrap;
+	height: 44px;
+	line-height: 44px;
+	font-size: 1.3rem;
+	background: $ColorSpecial-2;
+	border-radius: 22px;
+	color: #fff;
+	padding: 0 15px;
+
+	.with-bg &{
+		visibility: visible;
+		opacity: 1;
+	} 
+
+	
+	@media(min-width: 768px){
+		padding: 0 30px;
+		font-size: 1.8rem;  
+	}
+}

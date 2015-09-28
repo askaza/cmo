@@ -1,0 +1,20 @@
+include ../includes/_mixins.jade
+
+doctype html
+
+html
+	head
+		block PageTitle
+			title Webinar
+		include ../includes/_head.jade
+
+	body
+		section.wrapper
+			include ../includes/_header.jade
+
+			section.base-content
+				block PageContent
+
+			include ../includes/_footer.jade
+		script.
+			MktoForms2.loadForm("//app-lon03.marketo.com", "727-BWE-488", 1306);

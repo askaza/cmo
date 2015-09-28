@@ -1,0 +1,175 @@
+extends layouts/_base-layoute.jade
+
+block PageTitle
+	title Landing-1 v2
+
+block PageContent
+	section.page-section.main-screen#main-screen(style="background-image:url(pages_content/main-screen-bg/main-screen-bg-1.jpg)")
+		.main-screen-inner.inner-width
+			.main-screen__content
+				h3.section-title Webinar — платформа №1
+				.section-title-description для проведения вебинаров
+				.main-screen__controls
+					span.btn.go-to-form Попробовать бесплатно
+				.main-screen__photo
+					.screen-block
+						.screen-block-header
+							.screen-block-header__dots
+						.screen-block-content
+							img(src="pages_content/main-screens/main-screen-1.jpg", alt="")
+
+	section.page-section.using-static-slides#using
+		.using-slide-item
+			.using-slide-item__left
+				.using-slide-item__photo
+					.screen-block._with-shadow
+						.screen-block-header
+							.screen-block-header__dots
+						.screen-block-content
+							img(src="pages_content/using/using-1.jpg", alt="")
+			.using-slide-item__right
+				.using-slide-item__title Используйте вебинары для привлечения новых клиентов
+				.using-slide-item__description.
+					Если ваша компания эксперт в своей области, если вам есть что сказать
+					потенциальным клиентам — начните знакомство с помощью вебинаров		
+		.using-slide-item
+			.using-slide-item__left
+				.using-slide-item__photo
+					.screen-block._with-shadow
+						.screen-block-header
+							.screen-block-header__dots
+						.screen-block-content
+							img(src="pages_content/using/using-2.jpg", alt="")
+			.using-slide-item__right
+				.using-slide-item__title Общайтесь с клиентами и повышайте доверие к бренду
+				.using-slide-item__description.
+					Устраивайте регулярные вебинары, на которых вы будете помогать целевой аудитории решать проблемы.	
+		.using-slide-item
+			.using-slide-item__left
+				.using-slide-item__photo
+					.screen-block._with-shadow
+						.screen-block-header
+							.screen-block-header__dots
+						.screen-block-content
+							img(src="pages_content/using/using-3.jpg", alt="")
+			.using-slide-item__right
+				.using-slide-item__title Изучайте вашу целевую аудиторию
+				.using-slide-item__description.
+					Вебинары – это интерактивный формат, поэтому не только вы должны делиться информацией, 
+					но и участники вебинара. Устраивайте опросы, спра-шивайте, что волнует ваших клиентов, 
+					интересуй-тесь, как они относятся к вашим услугам.
+
+	section.page-section.reviews#reviews
+		.reviews-inner.inner-width
+			h3.section-title Вебинары на службе маркетинга: <br />как это работает?
+			.reviews-gallery
+				ul.reviews-slider#reviews-slider
+					li
+						.review-item
+							.review-item__logo
+								img(src="pages_content/company/lenovo.jpg", alt="")
+							.review-item__content
+								p.
+									«Вебинары для нас в 2015 году — один из основных инструментов для привлечения новых партнеров и 
+									повышения информированности уже существующего канала продаж». Компания выбрала формат вебинаров  
+									чтобы сократить время на запуск новых продуктови привлечь новых партнеров. 
+								p.
+									В результате внедрения вебинаров сотрудники добились увеличения партнерской базы на 43%, а 
+									средние расходы на одного участника сократились с 2000-5000 до 50-100 рублей. Теперь требуется 
+									всего 2-3 часа, чтобы собрать аудиторию со всей России.
+					li
+						.review-item
+							.review-item__logo
+								img(src="pages_content/company/krok.jpg", alt="")
+							.review-item__content
+								p.
+									Один из основных инструментов для привлечения новых партнеров и 
+									повышения информированности уже существующего канала продаж». Компания выбрала формат вебинаров  
+									чтобы сократить время на запуск новых продуктови привлечь новых партнеров.
+					li
+						.review-item
+							.review-item__logo
+								img(src="pages_content/company/abc.jpg", alt="")
+							.review-item__content
+								p.
+									Компания выбрала формат вебинаров чтобы сократить время на запуск новых продуктови привлечь новых партнеров. 
+								p.
+									Сотрудники добились увеличения партнерской базы на 43%, а 
+									средние расходы на одного участника сократились с 2000-5000 до 50-100 рублей. Теперь требуется 
+									всего 2-3 часа, чтобы собрать аудиторию со всей России.
+				ul.reviews-slider__previews
+					li.reviews-slider__preview-item
+						img(src="pages_content/company/lenovo-small.jpg", alt="")
+					li.reviews-slider__preview-item
+						img(src="pages_content/company/krok-small.jpg", alt="")
+					li.reviews-slider__preview-item
+						img(src="pages_content/company/abc-small.jpg", alt="")
+
+	section.page-section.effectiveness
+		.effectiveness-inner.inner-width
+			h3.section-title Как вебинары увеличивают эффективность маркетинговых кампаний
+			ul.effectiveness-list
+				li.effectiveness-list-item
+					.effectiveness-list-item__num 1
+					.effectiveness-list-item__description-wrap
+						.effectiveness-list-item__description
+							.effectiveness-list-item__description-inner Увеличение потока новых клиентов
+				li.effectiveness-list-item
+					.effectiveness-list-item__num 2
+					.effectiveness-list-item__description-wrap
+						.effectiveness-list-item__description
+							.effectiveness-list-item__description-inner Расширение географии действия бизнеса
+				li.effectiveness-list-item
+					.effectiveness-list-item__num 3
+					.effectiveness-list-item__description-wrap
+						.effectiveness-list-item__description
+							.effectiveness-list-item__description-inner Увеличение повторных продаж
+				li.effectiveness-list-item
+					.effectiveness-list-item__num 4
+					.effectiveness-list-item__description-wrap
+						.effectiveness-list-item__description
+							.effectiveness-list-item__description-inner Увеличение показателя лояльности клиентов
+
+	section.page-section.functionality#functionality
+		.functionality-inner.inner-width
+			h3.section-title Функционал Webinar.ru необходимый для проведения успешных маркетинговых мероприятий
+			ul.features-list
+				li.features-list-item
+					.features-list-item__icon._feature-icon-1
+					.features-list-item__title Записи вебинаров
+					.features-list-item__description дополнительный инструмент для генерации лидов
+				li.features-list-item
+					.features-list-item__icon._feature-icon-2
+					.features-list-item__title Повышение посещаемости
+					.features-list-item__description письма-напоминания, страницы регистрации
+				li.features-list-item
+					.features-list-item__icon._feature-icon-3
+					.features-list-item__title Тесты и опросы
+					.features-list-item__description с возможностью демонстрации ответов и сохранения их в любой форме
+				li.features-list-item
+					.features-list-item__icon._feature-icon-4
+					.features-list-item__title Полноценный интерактив
+					.features-list-item__description.
+						клиенты могут задавать вопросы и получать в режиме реального времени ответы, 
+						могут делиться идеями и комментариями
+				li.features-list-item
+					.features-list-item__icon._feature-icon-5
+					.features-list-item__title Удобный API
+					.features-list-item__description для интеграции с CRM, сервисами email-рассылки и любыми другими корпоративными программами
+				li.features-list-item
+					.features-list-item__icon._feature-icon-6
+					.features-list-item__title Обмен файлами
+					.features-list-item__description.
+						возможность обмениваться во время вебинара маркетинговыми материалами, промоакциями, купонами на скидку.
+
+	section.page-section.order-form#order-form
+		.order-form-inner.inner-width
+			h3.section-title Попробуйте Webinar.ru бесплатно
+			.section-title-description.
+				Бесплатный доступ на 30 дней. Помощь в освоении, рекомендации по проведению. Бесплатное проведение 
+				мероприятия на 150 участников. Присутствие технического специалиста на мероприятии. 
+			.order-form__content
+				form#mktoForm_1306
+
+
+

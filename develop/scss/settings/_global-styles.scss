@@ -1,0 +1,109 @@
+/**********  GLOBAL STYLES **********/
+html{
+    font-size: $FontSizeBase;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    color: $ColorBase;
+    font-family: $FontBase;
+    font-weight: 300;
+    line-height: 1;
+    background: $BgBase;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+a{
+    color: $ColorBase;
+    &:hover{text-decoration:none;}
+}
+
+b, strong{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+h4{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h5{
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+h6{
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], textarea{
+  font-family: $FontBase;
+}
+
+.leften{float:left;}
+.righten{float:right;}
+
+.clear{
+    clear: both;
+    position: relative;
+    height: 0px;
+}
+
+.fw:after{content: "\0020"; display: block; height: 0; visibility: hidden; clear:both;}
+
+.wrapper{
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.base-content{
+    position: relative;
+}
+
+.inner-width{
+    padding: 0 10px;
+
+    @media(min-width: 768px){
+        padding: 0 20px;
+    }
+
+    @media(min-width: 1024px){
+        padding: 0 35px;
+    }
+
+    @media(min-width: 1260px){
+        padding: 0 55px;
+    }
+
+    @media(min-width: 1420px){
+       width: $MaxInnerContentWidth;
+       margin: 0 auto;  
+       padding: 0;
+    }
+}
+

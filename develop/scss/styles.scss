@@ -1,0 +1,17 @@
+// Settings
+@import "settings/project-mixins";
+@import "settings/settings";
+@import "settings/reset";
+@import "settings/fonts";
+@import "settings/global-styles";
+
+// External libraries
+@import "components/external-libraries/jquery.fs.selecter";
+
+// Components
+@import "components/ui";
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/index"; 
